@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tendencia Central</title>
+    </head>
+    <body>
+        <center>
+            <h1>Tendencia Central / Dispersión</h1>
+            <div class="container" hidden=true>
+                <input type="checkbox">
+                <label>Automático</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <input type="text" placeholder="Media" class="media">
+                <button id="media">Calcular</button>
+                <button onclick="media()">Clear</button>
+            </div>
+            <label class="media"></label>
+            <br>
+            <br>
+            <div class="container">
+                <input type="text" placeholder="Mediana" class="mediana">
+                <button id="mediana">Calcular</button>
+                <button onclick="mediana()">Clear</button>
+            </div>
+            <label class="mediana"></label>
+            <br>
+            <br>
+            <div class="container">
+                <input type="text" placeholder="Moda" class="moda">
+                <button id="moda">Calcular</button>
+                <button onclick="moda()">Clear</button>
+            </div>
+            <label class="moda"></label>
+            <br>
+            <br>
+            <div class="container">
+                <input type="text" placeholder="Desvío estandar" class="desvio">
+                <button id="desvio">Calcular</button>
+                <button onclick="desvio()">Clear</button>
+            </div>
+            <label class="desvio"></label>
+            <br>
+            <br>
+            <div class="container">
+                <input type="text" placeholder="Varianza" class="varianza">
+                <button id="varianza">Calcular</button>
+                <button onclick="varianza()">Clear</button>
+            </div>
+            <label class="varianza"></label>
+        </center>
+        <script src = "index.js"></script>
+        <script type="text/javascript">
+            const modal = document.querySelector("label[class='moda']")
+            const medial = document.querySelector("label[class='media']")
+            const medianal = document.querySelector("label[class='mediana']")
+            const desviol = document.querySelector("label[class='desvio']")
+            const varianzal = document.querySelector("label[class='varianza']")
+            function moda() {
+                modal.textContent = ""
+            }
+            function mediana() {
+                medianal.textContent = ""
+            }
+            function media() {
+                medial.textContent = ""
+            }
+            function desvio() {
+                desviol.textContent = ""
+            }
+            function varianza() {
+                varianzal.textContent = ""
+            }
+        </script>
+    </body>
+</html>
