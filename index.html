@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Tendencia Central</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body style="background-color: darkblue;">
         <center>
             <h1>Tendencia Central / Dispersión</h1>
             <div class="container" hidden=true>
@@ -52,12 +53,16 @@
             </div>
             <label class="varianza"></label>
         </center>
-        <script src = "index.js"></script>
         <br>
         <br>
         <br>
         <br>
+        <img id="help" src="help.png">
+            <p id="help-text">A quedaste lol</p>
+        </img>
         <p class="credits">Hecho y programado por: Franco Abrajan</p>
+        <script src = "index.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
         <script type="text/javascript">
             const modal = document.querySelector("label[class='moda']")
             const medial = document.querySelector("label[class='media']")
