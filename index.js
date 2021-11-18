@@ -13,6 +13,7 @@ const desviolabel = document.querySelector("label[class='desvio']")
 const varianzabtn = document.querySelector("#varianza")
 const varianzainpt = document.querySelector("input[class='varianza']")
 const varianzalabel = document.querySelector("label[class='varianza']")
+const autoCheck = document.querySelector("input[type='checkbox']")
 const help = document.querySelector("#help")
 const htext = document.querySelector("#help-text")
 prombtn.onclick = function() {
@@ -30,7 +31,9 @@ medianabtn.onclick = function() {
     array.forEach((v,i) => {
         array[i] = Number(v)
     })
-    array.sort()
+    array.sort(function(a,b) {
+        return a-b;
+    })
     if (array.length%2 == 0) {
         let i= Math.floor(array.length/2)
         let i2 = Math.floor(array.length/2)-1
@@ -102,6 +105,13 @@ varianzabtn.onclick = function() {
     ftotal = ftotal/length
     varianzalabel.textContent = txt + Math.floor((ftotal)*1000)/1000
 }
+autoCheck.addEventListener("change", function () {
+    if (autoCheck.checked === false) {
+        
+    } else {
+
+    }
+})
 help.addEventListener("mouseenter",function(){
     htext.hidden = false
 })
