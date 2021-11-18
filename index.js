@@ -14,6 +14,8 @@ const varianzabtn = document.querySelector("#varianza")
 const varianzainpt = document.querySelector("input[class='varianza']")
 const varianzalabel = document.querySelector("label[class='varianza']")
 const autoCheck = document.querySelector("input[type='checkbox']")
+const help = document.querySelector("#help")
+const htext = document.querySelector("#help-text")
 prombtn.onclick = function() {
     let array = (prominpt.value).split(",")
     let length = array.length
@@ -107,4 +109,10 @@ autoCheck.addEventListener("change", function () {
     } else {
 
     }
+})
+help.addEventListener("mouseenter",function(){
+    htext.hidden = false
+})
+help.addEventListener("mouseleave", function(){
+    htext.hidden = true
 })
