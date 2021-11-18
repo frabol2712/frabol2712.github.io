@@ -76,7 +76,7 @@ desviobtn.onclick = function() {
     array.sort()
     let promedio = total/length
     array.forEach((v,i) => {
-        let res = Math.abs(promedio - v) * Math.abs(promedio - v)
+        let res = Math.abs(promedio - v) **2
         ftotal = ftotal + res
     })
     ftotal = ftotal/length
@@ -95,7 +95,7 @@ varianzabtn.onclick = function() {
     array.sort()
     let promedio = total/length
     array.forEach((v,i) => {
-        let res = Math.abs(promedio - v) * Math.abs(promedio - v)
+        let res = Math.abs(promedio - v) ** 2
         ftotal = ftotal + res
     })
     ftotal = ftotal/length
