@@ -12,8 +12,8 @@ button {
     position: fixed;
     height: 40px;
     width: 40px;
-    right: 25px;
-    bottom: 25px;
+    right: 5%;
+    bottom: 4%;
 }
 input {
     border:hidden;
@@ -36,7 +36,8 @@ h1 {
 }
 #help-text {
     position: fixed;
-    right: 80px;
+    right: 12%;
+    bottom: 7%;
     background-color: white;
     border-radius: 10px;
     border:none;
