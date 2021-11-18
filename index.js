@@ -84,7 +84,7 @@ desviobtn.onclick = function() {
 }
 varianzabtn.onclick = function() {
     let array = (varianzainpt.value).split(",")
-    let txt = "El desvío estandar es "
+    let txt = "La varianza es "
     let length = array.length
     let total = 0
     let ftotal = 0
