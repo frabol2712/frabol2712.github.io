@@ -13,7 +13,6 @@ const desviolabel = document.querySelector("label[class='desvio']")
 const varianzabtn = document.querySelector("#varianza")
 const varianzainpt = document.querySelector("input[class='varianza']")
 const varianzalabel = document.querySelector("label[class='varianza']")
-const autoCheck = document.querySelector("input[type='checkbox']")
 const help = document.querySelector("#help")
 const htext = document.querySelector("#help-text")
 prombtn.onclick = function() {
@@ -103,13 +102,6 @@ varianzabtn.onclick = function() {
     ftotal = ftotal/length
     varianzalabel.textContent = txt + Math.floor((ftotal)*1000)/1000
 }
-autoCheck.addEventListener("change", function () {
-    if (autoCheck.checked === false) {
-        
-    } else {
-
-    }
-})
 help.addEventListener("mouseenter",function(){
     htext.hidden = false
 })
