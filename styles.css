@@ -1,0 +1,44 @@
+button {
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    height: 30px;
+    width: 80px;
+}
+#help {
+    border-radius: 100%;
+    border-style: hidden;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    right: 25px;
+    bottom: 25px;
+}
+input {
+    border:hidden;
+    border-radius: 10px;
+    background-color: rgb(147, 147, 255);
+    height: 30px;
+}
+::placeholder {
+    color:rgba(0, 0, 0, 0.699);
+}
+h1 {
+    font-family:Segoe UI;
+    outline-style:groove;
+    background-color:rgb(255, 255, 255);
+    box-shadow: black;
+}
+.credits {
+    font-family:cursive;
+    color:white;
+}
+#help-text {
+    position: fixed;
+    right: 50px;
+    
+    background-color: white;
+    border-radius: 10px;
+    border:none;
+}
