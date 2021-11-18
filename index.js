@@ -13,24 +13,22 @@ const desviolabel = document.querySelector("label[class='desvio']")
 const varianzabtn = document.querySelector("#varianza")
 const varianzainpt = document.querySelector("input[class='varianza']")
 const varianzalabel = document.querySelector("label[class='varianza']")
-const autoCheck = document.querySelector("input[type='checkbox']")
 const help = document.querySelector("#help")
 const htext = document.querySelector("#help-text")
+function toNumber(array) {
+    return array.map((h) => Number(h))
+}
 prombtn.onclick = function() {
-    let array = (prominpt.value).split(",")
+    let array = ((prominpt.value).split(",")).map((e) => Number(e))
     let length = array.length
-    let total = 0
-    for (let i = 0; i < array.length; i++) {
-        total = total + Number(array[i])
-    }
+    let total = array.reduce((a, b) => a + b)
+    console.log(total, array.join())
     promplabel.textContent = "El promedio es " + String(total/length)
 }
 medianabtn.onclick = function() {
     let array = (medianainpt.value).split(",")
     let txt = "La mediana es "
-    array.forEach((v,i) => {
-        array[i] = Number(v)
-    })
+    array = toNumber(array)
     array.sort(function(a,b) {
         return a-b;
     })
