@@ -36,8 +36,7 @@ h1 {
 }
 #help-text {
     position: fixed;
-    right: 50px;
-    
+    right: 80px;
     background-color: white;
     border-radius: 10px;
     border:none;
