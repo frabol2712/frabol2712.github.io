@@ -105,13 +105,6 @@ varianzabtn.onclick = function() {
     ftotal = ftotal/length
     varianzalabel.textContent = txt + Math.floor((ftotal)*1000)/1000
 }
-autoCheck.addEventListener("change", function () {
-    if (autoCheck.checked === false) {
-        
-    } else {
-
-    }
-})
 help.addEventListener("mouseenter",function(){
     htext.hidden = false
 })
