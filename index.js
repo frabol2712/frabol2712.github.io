@@ -56,10 +56,12 @@ runbtn.onclick = function() {
         if (first === second) {
             right++
         }
-        newDiv(first)
-        newSpaceDiv()
-        newDiv(second)
-        newSpaceDiv(true)
+        if (!center.parentElement.hidden) {
+            newDiv(first)
+            newSpaceDiv()
+            newDiv(second)
+            newSpaceDiv(true)
+        }  
         if (center.children.length > 20) {
             clearNecessary()
         }
